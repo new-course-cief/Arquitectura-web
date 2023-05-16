@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arquitectura Distribuida</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><p>Arquitectura web</p></a>
+        <a href="protocoloComunicacion.html"><p>protocolos de comunicación</p></a>
+    </nav>
+    <main>
+        <h2>SOAP(Protocolo Simple de Acceso a Objetos)</h2>
+        <p>
+            Es un protocolo utilizado para intercambiar información estructurada en servicios web mediante XML (Lenguaje de Marcado Extensible). SOAP se basa en un conjunto de reglas y especificaciones para facilitar la comunicación entre diferentes sistemas a través de una red, independientemente de la plataforma, lenguaje de programación o sistema operativo subyacente.
+            En SOAP, los datos suelen estar encapsulados dentro de envoltorios XML, que contienen una cabecera y un cuerpo. La cabecera puede incluir información como detalles de autenticación o instrucciones de enrutamiento de mensajes, mientras que el cuerpo contiene los datos reales que se transmiten. Los mensajes SOAP generalmente se envían a través de protocolos como HTTP, SMTP o TCP/IP.           
+            SOAP proporciona un enfoque estandarizado para acceder a servicios web y admite características como seguridad, confiabilidad y capacidad transaccional. Define un conjunto de reglas y formatos bien definidos para el intercambio de mensajes, lo que lo hace adecuado para escenarios más complejos y a nivel empresarial. Sin embargo, SOAP puede ser más verboso y complejo en comparación con otros protocolos.
+        </p>
+        <p><i>exemplo gráfico</i></p>
+        <div class="image-container"><img src="imagenes/soap1.webp" alt="imagen de SOAP"></div>
+        <h2>
+            REST( Transferencia de Estado Representacional)
+        </h2>
+        <p>
+            REST significa Transferencia de Estado Representacional (Representational State Transfer). Es un estilo arquitectónico que define un conjunto de principios para construir servicios web. Los sistemas RESTful se basan en el concepto de recursos, que se identifican mediante URL (Localizadores de Recursos Uniformes) únicas. En REST, los recursos se representan y manipulan utilizando métodos HTTP estándar como GET, POST, PUT, DELETE, etc.
+            A diferencia de SOAP, que utiliza XML, REST puede usar diferentes formatos de datos como XML, JSON (Notación de Objetos de JavaScript) o incluso texto sin formato. JSON se ha convertido en el formato más comúnmente utilizado para las API RESTful debido a su simplicidad y legibilidad.       
+            REST promueve un modelo de comunicación cliente-servidor sin estado, donde cada solicitud del cliente contiene toda la información necesaria para ser procesada en el servidor. Se enfatiza la escalabilidad, la simplicidad y la facilidad de uso. Las API RESTful suelen construirse sobre estándares web existentes como HTTP, lo que las hace ligeras y ampliamente adoptadas.      
+            Si bien SOAP ofrece un soporte más amplio para características a nivel empresarial, REST se prefiere a menudo para aplicaciones más simples y livianas o para API públicas. Se alinea bien con los principios de la web y se utiliza ampliamente en el desarrollo web moderno.       
+            Tanto SOAP como REST tienen sus propias fortalezas y debilidades, y la elección entre ellos depende de los requisitos y limitaciones específicas de su proyecto o sistema.
+        </p>
+        <p><i>exemplo gráfico</i></p>
+        <div class="image-container"><img src="imagenes/rest1.webp" alt="imagen de SOAP"></div>
+    </main>
+</body>
+</html>

@@ -8,47 +8,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>firezilla</title>
+    <title>Arquitectura Distribuida</title>
 </head>
 <body>
+    <nav>
+        <a href="#"><p>Arquitectura web</p></a>
+        <a href="protocoloComunicacion.html"><p>protocolos de comunicación</p></a>
+    </nav>
     <main>
-        <h2>pasos para instalar y configurar FileZilla </h2>
-        <p>¿Que es Firezilla?</p>
-        <p>FileZilla es un software FTP (Protocolo de transferencia de archivos) gratuito y de código abierto que te permite transferir archivos entre tu computadora y un servidor. Te permite subir, descargar y gestionar archivos, así como editar y renombrar archivos y carpetas en tu servidor</p>
-        <h2>Ahora, empecemos con el proceso de instalación y configuración:</h2>
-       <ul>
+        <h2>Arquitectura Distribuida en un Entorno Web</h2>
+        <div class="image-container"><img src="imagenes/all.png" alt="imagen de arquitecturas distribuidas"></div>
+        <p>
+            En el mundo actual de aplicaciones web de alto rendimiento y escalabilidad, las arquitecturas distribuidas han surgido como una solución fundamental. Estas arquitecturas permiten la distribución de la carga de trabajo en varios servidores, lo que resulta en un mejor rendimiento, alta disponibilidad y mayor capacidad de escalado. En este contexto, exploraremos los elementos clave de hardware y software necesarios para implementar con éxito una arquitectura distribuida en un entorno web. Desde servidores y balanceadores de carga hasta servidores de aplicaciones y bases de datos distribuidas, descubriremos cómo todos estos componentes trabajan en conjunto para ofrecer una experiencia web eficiente y confiable
+        </p>
+
+        <p>Clasificando los elementos en hardware y software, podemos entender mejor los componentes necesarios para implementar una arquitectura distribuida en un entorno web.</p>
+        <h2>
+            Hardware:
+            Los componentes físicos para soportar una arquitectura distribuida eficiente:
+        </h2>
+       <ol>
         <li>
-            Instalar y configurar xampp. iniciar firezilla. Haga clic en admin para que lo lleve al servidor firezilla.
+            Servidores: Los servidores juegan un papel fundamental en una arquitectura distribuida. Estos equipos potentes son responsables de ejecutar y alojar los diferentes servicios y aplicaciones web distribuidas. Pueden ser servidores físicos o máquinas virtuales.
         </li>
-        <li> Crear una cuenta de usuario:
-            Bajo "Editar", seleccione "Usuarios" y haga clic en el botón "Agregar" para crear una nueva cuenta de usuario. Cree una cuenta de administrador. Ingrese un nombre de usuario y contraseña para la cuenta y especifique el directorio al que el cliente puede acceder a los archivos.
-            <div class="image-container"><img src="imagenes/user-account.png" alt="imagen de manual"></div>
-        </li>
-        <li>
-            Establecer permisos:
-            Haga clic en la cuenta de usuario creada y haga clic en la pestaña "Carpetas compartidas". Seleccione el directorio raíz del usuario y haga clic en el botón "Agregar". Elija los siguientes permisos: "Leer", "Escribir", "Listar", "Eliminar" y "Agregar".
-            <div class="image-container"><img src="imagenes/admin.png" alt="imagen de manual"></div>
-        </li>
-        <li>
-            Crear otra cuenta para otro cliente, especificar el directorio al que el cliente puede acceder y dar permisos de "leer" y "escribir", pero no de "eliminar".
-            <div class="image-container"><img src="imagenes/usertest.png" alt="imagen de manual"></div>
+        <li> 
+            Sistemas de respaldo de energía (UPS): Un sistema de respaldo de energía garantiza que los servidores y otros dispositivos críticos en la arquitectura distribuida no se vean afectados por interrupciones de energía. Esto proporciona una mayor disponibilidad y evita la pérdida de datos.
         </li>
         <li>
-            Conectar el cliente:
-            Descargue e instale el software cliente FileZilla en el ordenador del cliente. Inicie el software e ingrese la dirección IP del servidor en el campo "Host". Ingrese el nombre de usuario y la contraseña para la cuenta creada.
-            <div class="image-container"><img src="imagenes/client.png" alt="imagen de manual"></div>
+            Almacenamiento distribuido: Para mantener los datos de manera redundante y accesible desde múltiples servidores, se requiere un sistema de almacenamiento distribuido. Esto puede incluir sistemas de almacenamiento en red (NAS) o matrices de discos, que permiten el acceso y la actualización de datos de manera distribuida.
         </li>
         <li>
-            Probar la conexión:
-            El cliente no necesita tener instalado XAMPP. Solo necesita usar el cliente FileZilla para conectarse.
+            Unidades de estado sólido (SSD): Los SSD son dispositivos de almacenamiento más rápidos y confiables en comparación con los discos duros tradicionales. Pueden utilizarse para almacenar y acceder rápidamente a los datos en los servidores, mejorando el rendimiento de la arquitectura distribuida.
         </li>
-        </ul>
-        <h2>para connectar como cliente</h2>
-        <p>ip servidor:   192.168.1.117</p>
-        <p>usuario:   usertest1</p>
-        <p>contraseña:  usertest1</p>
-     
+        <li>
+            Dispositivos de red: Enrutadores, switches y firewalls son necesarios para administrar la conectividad y seguridad en la red. Estos dispositivos facilitan la comunicación entre los diferentes componentes de la arquitectura distribuida y aseguran la protección de los datos y la infraestructura.
+             <div class="image-container"><img src="imagenes/harddware.jpg" alt=""></div>
+        </li>
+       </ol>
+        <h2>
+            software:
+            Conjunto de instrucciones lógicas, programas y datos esencial para una arquitectura distribuida:
+        </h2>
+       <ol>
+        <li>
+            Servidor web: Un servidor web, como Apache HTTP Server o Nginx, es necesario para recibir y responder a las solicitudes web entrantes. Estos servidores se encargan de servir las páginas web y entregar los recursos solicitados a través del protocolo HTTP.
+        </li>
+        <li> 
+            Servidor de aplicaciones: Dependiendo de la tecnología utilizada, un servidor de aplicaciones como Tomcat, JBoss o Node.js puede ser requerido para ejecutar y administrar la lógica de la aplicación distribuida. Estos servidores proporcionan un entorno de ejecución para las aplicaciones web distribuidas.
+        </li>
+        <li>
+            Bases de datos distribuidas: Si se requiere persistencia de datos, las bases de datos distribuidas como MongoDB, Cassandra o Apache Hadoop permiten almacenar y consultar datos distribuidos en varios servidores. Estas bases de datos están diseñadas para garantizar la escalabilidad y la disponibilidad de los datos en un entorno distribuido.
+        </li>
+        <li>
+            Middleware: El middleware actúa como una capa de software entre los diferentes componentes de la arquitectura distribuida. Proporciona herramientas y servicios para facilitar la comunicación y la coordinación entre los componentes distribuidos. Ejemplos comunes de middleware son RabbitMQ, Apache Kafka o ActiveMQ.
+        </li>
+        <li>
+            Sistemas de gestión de contenedores: Herramientas como Docker y Kubernetes permiten la creación, implementación y administración de contenedores. Los contenedores ofrecen una forma eficiente y flexible de empaquetar aplicaciones y sus dependencias, lo que facilita la implementación y escalado en una arquitectura distribuida.
+            <div class="image-container"><img src="imagenes/softtware.png" alt="software image"></div>
+            <div class="image-container"><img src="imagenes/app-server.jpg" alt="software image"></div>
+        </li>
     </main>
-    <script src="index.js"></script>
 </body>
 </html>

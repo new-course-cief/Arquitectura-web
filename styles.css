@@ -1,20 +1,36 @@
+
 body {
-    padding: 20px;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1.2em;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ce0f9e;
+    width: 100%;
+    color: rgb(235, 232, 228);
+}
+nav a{
+    color: rgb(235, 232, 228);
+    text-decoration: none;
+}
+main{
+    padding: 10px 50px;
+
+}
 
 h2 {
     margin: 30px 0;
     font-style: bold italic;
     font-size: 1.6em;
-    color: #bc1717;
+    color: #ce0f9e;
 }
 
-ul{
+ol{
     padding: 10px;
 }
 
@@ -22,9 +38,15 @@ li{
     text-align: left;
     margin: 8px;
 }
-
+/* .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
 .image-container{
     max-width: 650px;
+    height: auto;
     margin: 0 auto;
 }
 .image-container img{
